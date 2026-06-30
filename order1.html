@@ -15,14 +15,43 @@
     <p>shipping: $10</p>
     <p>delavery charges: $50</p>
     <p>Total: $1509</p>
+    <h2>customer information</h2>
     <p>Name:</p>
-    <input type="text">
-    <p>Address:</p>
     <input type="text">
     <p>Phone:</p>
     <input type="text">
-     
-    <button>Place Order</button>
+    <p>Email:</p>
+    <input type="email">
+    <p>Address:</p>
+    <input type="text">
+    <p>city:</p>
+    <select>
+      <option>pune</option>
+      <option>nagpur</option>
+      <option>mumbai</option>
+      <option>khamgaon</option>
+      <option>akola</option>
+      <option>balapur</option>
+      <option>bhusawal</option>
+      <option>buldana</option>
+      <option>chandrapur</option>
+      <option>dhule</option>
+      <option>jalgaon</option>
+      <option>kolhapur</option>
+      <option>latur</option>
+      <option>nashik</option>
+    </select>
+    <p>pincode:</p>
+    <input type="text">
+    <h2>payment information</h2>
+    <input type="radio" id="code" name="payment" checked>
+    <label for="code">Cash on delivery</label><br>
+    <input type="radio" id="card" name="payment">
+    <label for="card">Credit/Debit Card</label><br>
+    <input type="radio" id="upi" name="payment">
+    <label for="upi">UPI</label><br>
+
+    <button onclick="placeOrder()">Place Order</button>
     <p>Thank you for shopping with us!</p>
     
     
