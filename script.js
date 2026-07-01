@@ -7,4 +7,8 @@
     }
     function orderplaced() {
         document.getElementById("thanks for shoping").innerHTML="order placed successfully!";  
+    
+    
+    
+    
     }
