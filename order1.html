@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="order.css">
   </head>
   <body>
-    <script src="order.js"></script>
+  
     
     <h1>order page</h1>
     <img src="product 1.jpg.png" alt="Product 1">
@@ -18,15 +18,15 @@
     <p>Total: $1509</p>
     <h2>customer information</h2>
     <p>Name:</p>
-    <input type="text">
+    <input type="text" id="name">
     <p>Phone:</p>
-    <input type="text">
+    <input type="text" id="phone">
     <p>Email:</p>
-    <input type="email">
+    <input type ="text" id="email">
     <p>Address:</p>
-    <input type="text">
+    <input type="text" id="address">
     <p>city:</p>
-    <select>
+    <select id="city">
       <option>pune</option>
       <option>nagpur</option>
       <option>mumbai</option>
@@ -43,7 +43,7 @@
       <option>nashik</option>
     </select>
     <p>pincode:</p>
-    <input type="text">
+    <input type="text" id="pincode">
     <h2>payment information</h2>
     <input type="radio" id="code" name="payment" checked>
     <label for="code">Cash on delivery</label><br>
@@ -51,9 +51,9 @@
     <label for="card">Credit/Debit Card</label><br>
     <input type="radio" id="upi" name="payment">
     <label for="upi">UPI</label><br>
-
-    <button onclick="placeOrder()">Place Order</button>
+    <button onclick="placeorder()">placeorder</button>
     <h2 id="result"></h2>
+    <script src="order.js"></script>
     
     
      
