@@ -7,8 +7,8 @@
     }
     function orderplaced() {
         document.getElementById("thanks for shoping").innerHTML="order placed successfully!";  
-    
-    
-    
-    
+    }
+    function buyNow(productId) {
+        localStorage.setItem("productid", productId);
+        window.location.href = "order1.html";
     }

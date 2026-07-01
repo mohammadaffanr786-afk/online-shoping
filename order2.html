@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <link rel="stylesheet" href="order.css">
   </head>
   <body>
     
@@ -14,15 +14,44 @@
     <p>shipping: $10</p>
     <p>delavery charges: $50</p>
     <p>Total: $559</p>
+    <h2>customer information</h2>
     <p>Name:</p>
-    <input type="text">
-    <p>Address:</p>
-    <input type="text">
+    <input type="text" id="name">
     <p>Phone:</p>
-    <input type="text">
-     
-    <button>Place Order</button>
-    <p>Thank you for shopping with us!</p>
+    <input type="text" id="phone">
+    <p>Email:</p>
+    <input type ="text" id="email">
+    <p>Address:</p>
+    <input type="text" id="address">
+    <p>city:</p>
+    <select id="city">
+      <option>pune</option>
+      <option>nagpur</option>
+      <option>mumbai</option>
+      <option>khamgaon</option>
+      <option>akola</option>
+      <option>balapur</option>
+      <option>bhusawal</option>
+      <option>buldana</option>
+      <option>chandrapur</option>
+      <option>dhule</option>
+      <option>jalgaon</option>
+      <option>kolhapur</option>
+      <option>latur</option>
+      <option>nashik</option>
+    </select>
+    <p>pincode:</p>
+    <input type="text" id="pincode">
+    <h2>payment information</h2>
+    <input type="radio" id="code" name="payment" checked>
+    <label for="code">Cash on delivery</label><br>
+    <input type="radio" id="card" name="payment">
+    <label for="card">Credit/Debit Card</label><br>
+    <input type="radio" id="upi" name="payment">
+    <label for="upi">UPI</label><br>
+    <button onclick="placeorder()">placeorder</button>
+    <h2 id="result"></h2>
+    <script src="order.js"></script>
     
     
      
@@ -30,3 +59,8 @@
   
     </body>
 </html>
+    
+    
+  
+  
+    
